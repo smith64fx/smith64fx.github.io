@@ -56,7 +56,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="darkbg masthead bg-primary text-white text-center">
+    <header class="masthead bg-primary text-white text-center">
       <canvas id="pixie"></canvas>
       <div class="container" style="z-index: 1; position: relative">
         <img width="200" class="img-fluid mb-5 d-block mx-auto" src="img/profile.png" alt="">
@@ -107,7 +107,7 @@
     </section>
 
     <!-- About Section -->
-    <section class="darkbg text-white mb-0" id="about">
+    <section class="bg-primary text-white mb-0" id="about">
       <div class="container">
         <h2 class="text-center text-uppercase text-white">About Michael</h2>
         <hr class="star-light mb-5">
@@ -162,7 +162,7 @@
     </section>
 
     <!-- Technologies Section -->
-    <section class="darkbg text-white mb-0">
+    <section class="bg-primary text-white mb-0">
       <div class="container">
         <h2 class="text-center text-uppercase mb-0">Technologies I use</h2>
         <hr class="star-light mb-5">
@@ -481,8 +481,8 @@
             var t = this.r * e;
             g = con.createRadialGradient(this.x, this.y, 0, this.x, this.y, t <= 0 ? 1 : t);
             g.addColorStop(0, "rgba(255,255,255," + e + ")");
-            g.addColorStop(this.stop, "rgba(77,101,181," + e * .6 + ")");
-            g.addColorStop(1, "rgba(77,101,181,0)");
+            g.addColorStop(this.stop, "rgba(222,222,222," + e * .6 + ")");
+            g.addColorStop(1, "rgba(222,200,222,0)");
             con.fillStyle = g;
             con.fill()
         };
