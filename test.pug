@@ -1,0 +1,23 @@
+html
+  body
+    script(type="application/ld+json").
+      [
+        {
+          "@context": "http://schema.org/",
+          "@type": "Product",
+          "name": "Kennzeichen für Fahrradträger und Anhänger",
+          "description": "{{ product.meta.description }}",
+          "offers": {
+            "@type": "Offer",
+            "priceCurrency": "EUR",
+            "price": "{{ (product.price / 100).toString() }}",
+            "priceValidUntil": "2020-11-05",
+            "itemCondition": "http://schema.org/NewCondition",
+            "availability": "http://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "Kennzeichen King"
+            }
+          }
+        }
+      ]
